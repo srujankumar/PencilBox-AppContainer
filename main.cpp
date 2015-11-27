@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     CommandApi *commandapi = new CommandApi( view );
     commandapi->setWebView( view );
 
-    view->setUrl( QUrl( "http://localhost/angular" ) );
+    view->setUrl( QUrl( "http://localhost" ) );
     view->showMaximized();
 
     return app.exec();
