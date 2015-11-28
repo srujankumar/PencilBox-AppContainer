@@ -5,6 +5,7 @@
 
 class QWebView;
 class QWebFrame;
+class QProcess;
 
 class CommandApi : public QObject
 {
@@ -22,6 +23,7 @@ private slots:
 
 private:
     QWebFrame *frame;
+    QProcess *prevProcess;
 };
 
 #endif // COMMANDAPI_H
